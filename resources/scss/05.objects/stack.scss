@@ -1,0 +1,11 @@
+.o-stack {
+	clear: both;
+	display: flex;
+	flex-direction: column;
+	gap: var( --o-stack-gap, var( --spacing--global ) );
+
+	> * {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}

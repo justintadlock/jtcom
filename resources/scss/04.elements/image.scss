@@ -1,0 +1,25 @@
+// Images.
+img {
+	max-width: 100%;
+	height:    auto;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px -1px $neutral-400,
+		    0 2px 4px -1px $neutral-300,
+		    inset 1px 1px 10px $neutral-300;
+
+	.stretch-full > & {
+		border-radius: 0;
+	}
+}
+
+a img {
+	transition: all 0.1s ease-in-out;
+
+	&:hover,
+	&:focus {
+		filter: brightness(1.05);
+		box-shadow: 0 4px 6px -1px $neutral-500,
+			    0 2px 4px -1px $neutral-400,
+			    inset 1px 1px 10px $neutral-400;
+	}
+}

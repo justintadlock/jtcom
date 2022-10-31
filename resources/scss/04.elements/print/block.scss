@@ -1,0 +1,88 @@
+
+:where( h1, h2, h3, h4, h5, h6 ) {
+	padding: 0 !important;
+	page-break-after: avoid;
+	break-after: avoid;
+	font-family: "Playfair Display", serif;
+}
+
+h1 { font-size: 20pt; line-height: 1.125; }
+h2 { font-size: 18pt; line-height: 1.25; }
+h3 { font-size: 16pt; }
+h4 { font-size: 15pt; }
+h5 { font-size: 14pt; }
+h6 { font-size: 13pt; }
+
+
+iframe,
+video,
+audio,
+embed,
+object,
+.app-header,
+.app-footer,
+.block-embed {
+	display: none !important;
+}
+
+figcaption {
+	font-family: inherit;
+}
+
+figcaption {
+	padding-left: 0;
+	padding-right: 0;
+	text-align: left;
+	font-size: 11pt;
+}
+
+img {
+	box-shadow: none;
+	border: 1px solid $neutral-100;
+}
+
+
+ul, ol {
+	padding-left: 1cm;
+}
+
+p.lead-in::first-line {
+	font-weight: 400;
+}
+
+blockquote {
+	border: none;
+        font-style: italic;
+        padding: 0 var( --spacing--global );
+        position: relative;
+        z-index: 0;
+	color: inherit;
+
+	&::before {
+		display: none;
+	}
+
+	&::after {
+		content: "\201D";
+		position: absolute;
+		top: 0;
+		left: -0.5em;
+		font-style: normal;
+		font-size: 5rem;
+		line-height: 1;
+		text-align: center;
+		text-indent: -2px;
+		width: 1em;
+		margin: 0;
+		color: $neutral-100;
+	}
+
+	cite {
+		margin-top: var( --spacing--4 );
+		font-size: 12pt;
+
+		&::before {
+			content: "\2014 "
+		}
+	}
+}

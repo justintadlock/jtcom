@@ -1,0 +1,81 @@
+
+.entry__header + .entry__content {
+	margin-top: 1rem;
+}
+
+.entry__byline {
+	font-family: inherit;
+	font-size: 12pt;
+}
+
+.entry-terms {
+	display: initial;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+
+	&__label {
+		font-weight: 700;
+	}
+
+	&__term {
+
+		&::after {
+			content: ", "
+		}
+
+		&:last-child::after {
+			display: none;
+		}
+	}
+}
+
+.entry-terms__prefix {
+	display: none;
+}
+
+.entry__byline + .entry__title {
+	margin-top: 0.5rem;
+}
+h1,
+.entry__title {
+	font-weight: 900;
+	font-size: 26pt;
+	&::before {
+		display: none;
+	}
+}
+
+.entry {
+	break-before: always;
+}
+
+.entry__footer {
+	break-before: avoid;
+}
+
+.gallery > * {
+	break-before: page;
+	break-after: page;
+}
+
+.gallery > *,
+figure,
+img {
+	display: block;
+	break-inside: avoid; // Prevent images from being split up
+}
+
+.entry__content,
+.entry__content p {
+	widows: 3;
+	orphans: 2;
+}
+
+.entry__content p {
+	text-align: justify;
+}
+
+.entry__content li p {
+	text-align: left;
+}

@@ -1,0 +1,15 @@
+figure {}
+
+figcaption {
+	padding: var( --spacing--2 ) var( --spacing--4 ) 0;
+	text-align: center;
+	font-family: var( --font-family--secondary );
+	//font-size: calc( var( --font-size--2xl ) - 0.0625em );
+	//line-height: calc( var( --line-height--2xl ) - 0.0625em );
+
+	// Custom font-size and line-height to handle Caveat font's weirdness.
+	font-size:  #{ fluid( 1.25rem, 1.4375rem, $breakpoint-sm, $breakpoint-base ) };
+	line-height: 1.75;
+
+	color: $neutral-600;
+}

@@ -1,0 +1,26 @@
+// Always zero out the first child's top margin.
+:first-child { margin-top: 0; }
+
+// Fill SVGs with current color.
+.fill-current { fill: currentColor; }
+
+/// Clear floats.
+.clear { clear: both; }
+
+// Used for small images that are possibly something like a smiley, transparent
+// PNG, and so on where we don't want borders.
+.is-borderless {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+
+.gap-0  { gap: 0;       }
+.gap-1  { gap: 0.25rem; }
+.gap-2  { gap: 0.5rem;  }
+.gap-4  { gap: 1rem;    }
+.gap-6  { gap: 1.5rem;  }
+.gap-8  { gap: 2rem;    }
+.gap-12 { gap: 3rem;    }
+.gap-16 { gap: 4rem;    }

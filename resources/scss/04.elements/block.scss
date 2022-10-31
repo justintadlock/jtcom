@@ -1,0 +1,22 @@
+address,
+blockquote,
+figure,
+h1, h2, h3, h4, h5, h6,
+hr,
+iframe,
+ul, ol, dl,
+p,
+pre,
+table {
+	margin-top: var( --o-flow--gap, var( --spacing--global ) );
+	margin-bottom: 0;
+}
+
+ul ul, ul ol,
+ol ol, ol ul {
+	margin-top: 0;
+}
+
+audio, video, iframe {
+	max-width: 100%;
+}

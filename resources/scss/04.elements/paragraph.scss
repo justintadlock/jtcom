@@ -1,0 +1,18 @@
+p {
+	&:empty { display: none; }
+
+	&.indent {
+		text-indent: var( --spacing--6 );
+	}
+
+	&.drop-cap::first-letter {
+		-webkit-initial-letter: 2;
+		initial-letter: 2;
+	}
+
+	&.lead-in::first-line {
+		font-variant: small-caps;
+		font-weight: 700;
+		font-size: 1.125em;
+	}
+}

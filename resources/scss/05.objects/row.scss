@@ -1,0 +1,10 @@
+.o-row {
+	clear: both;
+	display: flex;
+	gap: var( --o-row--gap, var( --spacing--2 ) );
+
+	> * {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}

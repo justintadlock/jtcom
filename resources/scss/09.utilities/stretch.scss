@@ -1,0 +1,66 @@
+// Stretch elements outside of their container.
+
+[class*=stretch-] {
+	clear: both;
+	max-width: 100%;
+	margin-left: var( --spacing--global );
+	margin-right: var( --spacing--global );
+
+	> * {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.stretch-full {
+	max-width:    $width-full;
+	margin-left:  auto;
+	margin-right: auto;
+}
+
+.stretch-base,
+.stretch-md {
+	@media ( min-width: $breakpoint-base ) {
+		max-width:    $width-base;
+		margin-left:  auto;
+		margin-right: auto;
+	}
+}
+
+.stretch-lg {
+	@media ( min-width: $breakpoint-lg ) {
+		max-width:    $width-lg;
+		margin-left:  auto;
+		margin-right: auto;
+	}
+}
+
+// `.stretch-wide` is an alias class. Currently, it is aliased to `.stretch-xl`,
+// but it can be aliased to other classes in the future. We just have to move it
+// them.  For this reason, it is best to use `.stretch-wide` in actual content
+// since it will be more forward-compatible with whatever the current design is.
+
+.stretch-wide,
+.stretch-xl {
+	@media ( min-width: $breakpoint-xl ) {
+		max-width:    $width-xl;
+		margin-left:  auto;
+		margin-right: auto;
+	}
+}
+
+.stretch-2xl {
+	@media ( min-width: $breakpoint-2xl ) {
+		max-width:    $width-2xl;
+		margin-left:  auto;
+		margin-right: auto;
+	}
+}
+
+.stretch-3xl {
+	@media ( min-width: $breakpoint-3xl ) {
+		max-width:    $width-3xl;
+		margin-left:  auto;
+		margin-right: auto;
+	}
+}

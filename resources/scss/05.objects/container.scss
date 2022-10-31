@@ -1,0 +1,47 @@
+[class*=o-container] > * {
+	max-width: 100%;
+	margin-left: var( --spacing--global );
+	margin-right: var( --spacing--global );
+}
+
+.o-container {
+
+	&-full > * {
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&-md,
+	&-base > * {
+		@media ( min-width: $breakpoint-base ) {
+			max-width:    $width-base;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+	}
+
+	&-lg > * {
+		@media ( min-width: $breakpoint-lg ) {
+			max-width:    $width-lg;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+	}
+
+	&-xl > * {
+		@media ( min-width: $breakpoint-xl ) {
+			max-width:    $width-xl;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+	}
+
+	&-2xl > * {
+		@media ( min-width: $breakpoint-2xl ) {
+			max-width:    $width-2xl;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+	}
+}

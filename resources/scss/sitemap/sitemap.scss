@@ -1,0 +1,184 @@
+/*!
+// Settings.
+@import '01.settings/border';
+@import '01.settings/colors';
+@import '01.settings/dimensions';
+@import '01.settings/effects';
+@import '01.settings/typography';
+
+// Tools.
+@import '02.tools/fluid';
+@import '02.tools/round';
+
+// Generic.
+@import '03.generic/fonts';
+@import '03.generic/reset';
+@import '03.generic/var';
+
+// Elements.
+@import '04.elements/root';
+@import '04.elements/block';
+@import '04.elements/inline';
+@import '04.elements/code';
+@import '04.elements/figure';
+@import '04.elements/heading';
+@import '04.elements/image';
+@import '04.elements/list';
+@import '04.elements/paragraph';
+@import '04.elements/quote';
+@import '04.elements/separator';
+@import '04.elements/table';
+
+// Objects.
+@import '05.objects/container';
+@import '05.objects/flow';
+@import '05.objects/row';
+@import '05.objects/stack';
+
+// Components.
+@import '06.components/archives';
+@import '06.components/box';
+@import '06.components/embed';
+@import '06.components/entry';
+@import '06.components/entry-terms';
+@import '06.components/footnotes';
+@import '06.components/gallery';
+
+// Utilities.
+@import '09.utilities/a11y';
+@import '09.utilities/align';
+@import '09.utilities/helpers';
+@import '09.utilities/stretch';
+
+// Sitemap styles.
+@font-face {
+	font-family: 'Courier Prime';
+	font-style: normal;
+	font-weight: 400;
+	src: url( ../fonts/courier-prime/CourierPrime-Regular.woff2 );
+}
+
+@font-face {
+	font-family: 'Courier Prime';
+	font-style: italic;
+	font-weight: 400;
+	src: url( ../fonts/courier-prime/CourierPrime-Italic.woff2 );
+}
+
+@font-face {
+	font-family: 'Courier Prime';
+	font-style: normal;
+	font-weight: 700;
+	src: url( ../fonts/courier-prime/CourierPrime-Bold.woff2 );
+}
+
+@font-face {
+	font-family: 'Courier Prime';
+	font-style: italic;
+	font-weight: 700;
+	src: url( ../fonts/courier-prime/CourierPrime-BoldItalic.woff2 );
+}
+
+body {
+	font-family:
+		"Courier Prime",
+		"Twemoji Mozilla",
+		"Apple Color Emoji",
+		"Noto Color Emoji",
+		"Segoe UI Emoji",
+		"Segoe UI Symbol",
+		"EmojiOne Color",
+		"Android Emoji",
+		monospace;
+	color: $neutral-700;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+	font-family: inherit;
+	font-weight: 400;
+}
+
+.block-heading__permalink {
+	display: none;
+}
+
+figcaption {
+	font-family: inherit;
+	font-size: 1rem;
+	color: $neutral-600;
+}
+
+hr {
+	height: 2px;
+	background: linear-gradient( to right, #{ $neutral-500 } 50%, transparent 50% );
+	background-size: 1rem 100%;
+	border: none;
+}
+
+.emoji-row {
+	display: flex;
+	align-items: baseline;
+	gap: 1rem;
+}
+.emoji-row__emoji {
+	font-size: 1rem;
+}
+
+.sitemap {
+	padding-bottom: 4rem;
+	box-sizing:border-box;
+	font-size:1.125rem;
+
+	&__welcome-message {
+		box-sizing: content-box;
+		padding: 2rem 0;
+		background: $primary-100;
+		background-image: linear-gradient(to right, #{ $primary-100 } 60%, #{ $primary-50 } );
+
+		h2 {
+			font-size: var( --font-size--2xl );
+			line-height: var( --line-height--2xl );
+			font-weight: 700;
+		}
+	}
+
+	&__header {
+		margin-top: 4rem;
+	}
+
+	&__title {
+		font-size: 2rem;
+		font-weight: 400;
+		line-height: 1.25;
+	}
+
+	&__description {
+		margin-top: 0;
+		color: $neutral-500;
+	}
+
+	&__entries {
+		margin-top: 2rem;
+		table-layout: fixed;
+		td,
+		th {
+			padding: 1.5rem 1rem;
+		}
+	}
+}
+
+.sitemap-url {
+	&__lastmod {
+		width: 100%;
+		max-width: 25%;
+	}
+	&__loc {
+		.emoji-row {
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}
+*/

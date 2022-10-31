@@ -1,0 +1,23 @@
+// Embeds.
+// @todo Make `.block-embed .block-embed--$type` class.
+
+.block-embed__wrapper,
+.embed-wrap {
+	position:       relative;
+	margin-bottom:  2em;
+	padding-bottom: 56.25%;
+	padding-top:    30px;
+	height:         0;
+	overflow:       hidden;
+}
+
+.block-embed__wrapper iframe,
+.embed-wrap iframe {
+	position:  absolute;
+	top:       0;
+	left:      0;
+	width:     100%;
+	max-width: 100%;
+	height:    100%;
+	margin:    0;
+}

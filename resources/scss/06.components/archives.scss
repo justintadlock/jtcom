@@ -1,0 +1,53 @@
+.archives {
+
+	&-site {
+		--o-flow--gap: var( --spacing--12 );
+
+		&__list {
+			margin-top: var( --spacing--4 );
+			list-style: none;
+			padding: 0;
+		}
+
+		&__item {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: start;
+			justify-content: left;
+			margin-left: var( --spacing--1 );
+		}
+
+		&__day {
+			flex-shrink: 0;
+			width: 3ch;
+			color: $neutral-500;
+			font-family: var( --font-family--mono );
+		}
+
+		&__post {
+			margin-left: var( --spacing--2 );
+		}
+	}
+
+	&-monthly,
+	&-yearly {
+
+		&__list {
+			padding-left: var( --spacing--4 );
+		}
+
+		// &__item {}
+
+		&__content {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: start;
+			justify-content: space-between;
+		}
+
+		&__count { text-align: right; }
+	}
+
+	// &-monthly .archives-monthly__month,
+	// &-yearly .archives-yearly__year {}
+}

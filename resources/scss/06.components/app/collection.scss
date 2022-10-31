@@ -1,0 +1,18 @@
+.collection {
+
+	&--summary > * + * {
+		--o-flow--gap: var( --spacing--16 );
+	}
+
+	&--category-art img {
+		aspect-ratio: 1 / 1;
+	}
+
+	&--category-drawing img {
+		aspect-ratio: 3 / 4;
+	}
+
+	&--category-painting img {
+		aspect-ratio: 16 / 9;
+	}
+}

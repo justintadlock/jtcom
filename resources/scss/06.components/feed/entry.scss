@@ -1,0 +1,40 @@
+.entry {
+	margin: var( --spacing--16 ) 0 auto;
+
+	&__enclosure {
+		img {
+			aspect-ratio: 16/9;
+			object-fit: cover;
+		}
+		+ * {
+			margin-top: var( --spacing--6 );
+		}
+	}
+
+	&__pubdate,
+	&__category {
+		font-size: var( --font-size--base );
+		line-height: var( --line-height--base );
+		color: $neutral-500;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: var( --font-size--2xl );
+		line-height: var( --line-height--2xl );
+		font-weight: 700;
+
+		+ * {
+			margin-top: var( --spacing--4 );
+		}
+	}
+
+	&__content {
+		margin-top: var( --spacing--global );
+	}
+
+	&__description,
+	&__more {
+		margin-top: var( --spacing--4 );
+	}
+}

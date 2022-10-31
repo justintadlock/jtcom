@@ -1,0 +1,76 @@
+.app-header {
+	z-index: 40;
+	position: sticky;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	top: 0;
+	padding-top: 6px;
+	background: linear-gradient( to top right, transparent 40%, $primary-50 ),
+		    linear-gradient( to top, $white 60%, $primary-50 );
+
+	@media ( min-width: $breakpoint-xl ) {
+		position: static;
+	}
+
+	// Creates the top gradient top border.
+	&::before {
+		content: "";
+		z-index: 2;
+		position:fixed;
+		width: 100%;
+		height: 6px;
+		top: 0;
+		background: linear-gradient( to right, $primary-600, $primary-50 );
+	}
+
+	// Creates a thin gradient bottom border.
+	@media ( max-width: $breakpoint-xl ) {
+		&::after {
+			content: "";
+			z-index: 2;
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			bottom: 0;
+			background: linear-gradient( to right, $primary-50, transparent );
+		}
+	}
+
+	&__branding {
+		overflow: hidden;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: $sizing-16;
+		padding: 0 var( --spacing--8 );
+
+		@media ( min-width: $breakpoint-xl ) {
+			flex-grow: 0;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		font-family: var( --font-family--secondary );
+		font-weight: 400;
+		font-size: var( --font-size--4xl );
+		line-height: 0;
+		text-shadow: 0 1px #e0f2fe;
+		transform: rotate( -2deg );
+	}
+
+	&__link {
+		color: $neutral-800;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+			text-decoration-thickness: 2px;
+		}
+	}
+}

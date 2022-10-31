@@ -1,0 +1,47 @@
+
+// Mostly used for defining `max-width` and breakpoints.
+$width-xs:   22.5rem; // 360px
+$width-sm:   30rem;   // 480px
+$width-md:   40rem;   // 640px
+$width-lg:   48rem;   // 768px
+$width-xl:   64rem;   // 1024px
+$width-2xl:  80rem;   // 1280px
+$width-3xl:  96rem;   // 1536px
+$width-full: 100vw;
+
+$width-base: $width-md; // alias
+
+// Breakpoints are triggered when the screen size reaches the desired point
+// plus and additional `4rem`, which is the size of the global spacing value
+// (2x for both the left/right sides).
+$breakpoint-xs:  $width-xs  + 4rem; // 22.5rem (360px) + 4rem (padded)
+$breakpoint-sm:  $width-sm  + 4rem; // 30rem   (480px) + 4rem (padded)
+$breakpoint-md:  $width-md  + 4rem; // 40rem   (640px) + 4rem (padded)
+$breakpoint-lg:  $width-lg  + 4rem; // 48rem   (768px) + 4rem (padded)
+$breakpoint-xl:  $width-xl  + 4rem; // 64rem   (1024px) + 4rem (padded)
+$breakpoint-2xl: $width-2xl + 4rem; // 80rem   (1280px) + 4rem (padded)
+$breakpoint-3xl: $width-3xl + 4rem; // 96rem   (1536px) + 4rem (padded)
+
+$breakpoint-base: $breakpoint-md; // alias
+
+// Sizing variables (can mostly be used for widths/heights).
+$sizing-unit: 0.25rem;
+$sizing-1: 0.25rem;
+$sizing-2: 0.5rem;
+$sizing-3: 0.75rem;
+$sizing-4: 1rem;
+$sizing-5: 1.25rem;
+$sizing-6: 1.5rem;
+$sizing-8: 2rem;
+$sizing-10: 2.5rem;
+$sizing-12: 3rem;
+$sizing-16: 4rem;
+$sizing-20: 5rem;
+$sizing-24: 6rem;
+$sizing-32: 8rem;
+$sizing-40: 10rem;
+$sizing-48: 12rem;
+$sizing-56: 14rem;
+$sizing-64: 16rem;
+$sizing-full: 100%;
+$sizing-auto: auto;

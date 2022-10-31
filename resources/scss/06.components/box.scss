@@ -1,0 +1,42 @@
+.box {
+	overflow: hidden;
+	margin-top: var( --spacing--global );
+	padding: var( --spacing--global );
+	font-size: var( --font-size--lg );
+	line-height: var( --line-height--lg );
+	color: $neutral-800;
+	text-shadow: 0 1px $neutral-200;
+	background: $neutral-50;
+	box-shadow: 0 4px 6px -1px $neutral-300,
+		0 2px 4px -1px $neutral-200,
+		inset 1px 1px 10px $neutral-100;
+	border-radius: 6px;
+	border-left: 6px solid $neutral-600;
+
+	a {
+		color: inherit;
+
+		&:hover,
+		&:focus { background: $neutral-100; }
+	}
+
+	&--note {
+		color: $primary-800;
+		text-shadow: 0 1px $primary-100;
+		background: $primary-50;
+		border-left-color: $primary-600;
+
+		a:hover,
+		a:focus { background: $primary-100; }
+	}
+
+	&--warning {
+		color: $secondary-800;
+		text-shadow: 0 1px $secondary-100;
+		background: $secondary-50;
+		border-left-color: $secondary-600;
+
+		a:hover,
+		a:focus { background: $secondary-100; }
+	}
+}

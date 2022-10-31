@@ -1,0 +1,22 @@
+
+:where(h1, h2, h3, h4, h5, h6) {
+	font-family: inherit;
+	font-weight: 400;
+}
+
+.block-heading__permalink {
+	display: none;
+}
+
+figcaption {
+	font-family: inherit;
+	font-size: 1rem;
+	color: $neutral-600;
+}
+
+hr {
+	height: 2px;
+	background: linear-gradient( to right, #{ $neutral-500 } 50%, transparent 50% );
+	background-size: 1rem 100%;
+	border: none;
+}

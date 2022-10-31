@@ -1,0 +1,87 @@
+:where( h1, h2, h3, h4, h5, h6 ) {
+	font-family: var( --font-family--headings );
+	font-weight: 900;
+
+	a,
+	a:visited {
+		color: $neutral-800;
+		text-decoration: none;
+	}
+
+	a:hover,
+	a:focus {
+		text-decoration: underline;
+	}
+}
+
+* + :where( h1, h2, h3, h4, h5, h6 ) {
+	--o-flow--gap: var( --spacing--12 );
+}
+
+:where( h1, h2, h3, h4, h5, h6 ) + *,
+:where( h1, h2, h3, h4, h5, h6 ) + .alignleft + *,
+:where( h1, h2, h3, h4, h5, h6 ) + .alignright + * {
+        --o-flow--gap: var( --spacing--4 );
+}
+
+:where( h1, h2, h3, h4, h5, h6 ) + :where( h2, h3, h4, h5, h6 ) {
+        --o-flow--gap: var( --spacing--2 );
+}
+
+h1 {
+	font-size: var( --font-size--5xl );
+	line-height: var( --line-height--5xl );
+}
+
+h2 {
+	font-size: var( --font-size--4xl );
+	line-height: var( --line-height--4xl );
+}
+
+h3 {
+	font-size: var( --font-size--3xl );
+	line-height: var( --line-height--3xl );
+}
+
+h4 {
+	font-size: var( --font-size--2xl );
+	line-height: var( --line-height--2xl );
+}
+
+h5 {
+	font-size: var( --font-size--xl );
+	line-height: var( --line-height--xl );
+}
+
+h6 {
+	font-size: var( --font-size--lg );
+	line-height: var( --line-height--lg );
+}
+
+.block-heading__permalink {
+	display: none;
+	width: 2rem;
+	margin-left: -2rem;
+	font-size: 0.75em;
+	font-family: var( --font-family--secondary );
+	vertical-align: top;
+	text-decoration: none;
+	color: $primary-600;
+
+	&:hover,
+	&:focus { text-decoration: none; }
+
+	@media ( min-width: $breakpoint-base ) {
+		display: inline-block;
+	}
+}
+
+h3 .block-heading__permalink {
+	width: 1.75rem;
+	margin-left: -1.75rem;
+}
+
+:where( h4, h5, h6 ) .block-heading__permalink {
+	width: 1.5rem;
+	margin-left: -1.5rem;
+}

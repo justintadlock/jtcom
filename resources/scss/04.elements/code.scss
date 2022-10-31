@@ -1,0 +1,53 @@
+pre {
+	overflow      : auto;
+	word-wrap     : normal;
+	tab-size      : 4;
+	padding       : var( --spacing--global );
+	box-sizing    : content-box;
+
+	font-size: 18px;
+	line-height: 1.75;
+        color: $primary-800;
+        text-shadow: 0 1px #e9f3f8;
+        background: $primary-50;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+	            0 2px 4px -1px rgba(0, 0, 0, 0.06),
+		    inset 1px 1px 10px #e9f3f8;
+        border-radius: 6px;
+        border-left: 6px solid $primary-600;
+}
+
+code {
+	padding    : .125em .25em;
+	font-family: var( --font-family--mono );
+    	font-size  : 1rem;
+	color: $primary-800;
+        text-shadow: 0 1px #e9f3f8;
+        background: $primary-50;
+}
+
+pre code {
+	padding    : 0;
+	font-size  : 1em;
+	background : transparent;
+	border     : none;
+}
+
+pre::-webkit-scrollbar {
+	width: 0.75rem;
+	width: 20px;
+}
+
+pre::-webkit-scrollbar-thumb {
+	margin: 0 0.125rem;
+	background: $primary-600;
+	border: 6px solid $primary-100;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+	background: $primary-800;
+}
+
+pre::-webkit-scrollbar-track {
+	background: $primary-100;
+}

@@ -1,0 +1,16 @@
+
+$emoji-stack: #{
+	"Twemoji Mozilla",
+	"Apple Color Emoji",
+	"Noto Color Emoji",
+	"Segoe UI Emoji",
+	"Segoe UI Symbol",
+	"EmojiOne Color",
+	"Android Emoji"
+};
+
+$font-family-primary:   "Karla", #{ $emoji-stack }, sans-serif;
+$font-family-secondary: "Caveat", #{ $emoji-stack }, cursive;
+$font-family-headings:  "Figtree", #{ $emoji-stack }, sans-serif;
+$font-family-mono:	#{"Source Code Pro", Monaco, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier}, #{ $emoji-stack }, monospace;
+

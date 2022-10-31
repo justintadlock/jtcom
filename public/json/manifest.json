@@ -1,0 +1,46 @@
+{
+	"$schema": "https://json.schemastore.org/web-manifest-combined.json",
+	"name": "Justin Tadlock",
+	"short_name": "Tadlock",
+	"start_url": "https://justintadlock.com",
+	"theme_color": "#2b6cb0",
+	"background_color": "#2b6cb0",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "../img/favicon-16.png",
+			"type": "image/png",
+			"sizes": "16x16"
+		},
+		{
+			"src": "../img/favicon-32.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		},
+		{
+			"src": "../img/favicon-48.png",
+			"type": "image/png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "../img/favicon-96.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "../img/favicon-180.png",
+			"type": "image/png",
+			"sizes": "180x180"
+		},
+		{
+			"src": "../img/favicon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "../img/favicon-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	]
+}

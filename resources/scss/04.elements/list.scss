@@ -1,0 +1,27 @@
+ul, ol {
+	padding-left: var( --spacing--global );
+
+	@media ( max-width: $breakpoint-base ) {
+		padding-left: var( --spacing--4 );
+	}
+}
+
+:where( .app-content li + li ),
+:where( .app-content li > ul ),
+:where( .app-content li > ol ) {
+	margin-top: var( --spacing--2 );
+}
+
+ul li {
+	list-style: circle;
+}
+
+ul li ul li {
+	list-style: "- ";
+}
+
+ol li::marker {
+	font-weight: 700;
+}
+
+ul li::marker {}

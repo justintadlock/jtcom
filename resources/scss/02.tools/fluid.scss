@@ -1,0 +1,19 @@
+@use 'sass:math';
+
+// Usage:
+// #{ fluid( 1rem, 1.5rem, $breakpoint-sm, $breakpoint-base ) };
+
+@function fluid(
+	$min-size,
+	$max-size,
+	$min-breakpoint: $breakpoint-sm,
+	$max-breakpoint: $breakpoint-base,
+	$unit: vw
+) {
+	$slope: math.div($max-size - $min-size, $max-breakpoint - $min-breakpoint);
+	$slope-to-unit: round($slope * 100, 5);
+	$intercept-rem: round( $min-size - $slope * $min-breakpoint, 5 );
+	$min-size-rem: round( $min-size, 5);
+	$max-size-rem: round( $max-size, 5);
+	@return clamp(#{$min-size-rem}, #{$slope-to-unit}#{$unit} + #{$intercept-rem}, #{$max-size-rem});
+}

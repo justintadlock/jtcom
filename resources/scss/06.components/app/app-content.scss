@@ -1,0 +1,18 @@
+.app-content {
+	word-wrap:     break-word;
+	word-break:    normal;
+	overflow:      hidden;
+	position:      relative;
+	padding:       var( --spacing--16 ) 0 0;
+	font-size:     var( --font-size--xl );
+	line-height:   var( --line-height--xl );
+
+	// template-canvas.php
+	&--canvas { padding: 0; }
+
+	// Doubles the default spacing between major elements.
+	&.o-flow > * + * {
+		--o-flow--gap: var( --spacing--16 );
+		//margin-top: var( --spacing--16 );
+	}
+}

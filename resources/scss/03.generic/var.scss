@@ -1,0 +1,74 @@
+:root {
+	// Spacing -------------------------------------------------------------
+	--spacing--1:  0.25rem;
+	--spacing--2:  0.5rem;
+	--spacing--3:  0.75rem;
+	--spacing--4:  1rem;
+	--spacing--6:  1.5rem;
+	--spacing--8:  2rem;
+	--spacing--10: 2.5rem;
+	--spacing--12: 3rem;
+	--spacing--16: 4rem;
+	--spacing--24: 6rem;
+	//--spacing--32: 8rem;
+	//--spacing--40: 10rem;
+
+	--spacing--global: var( --spacing--8 );
+
+	// Font families -------------------------------------------------------
+	--font-family--primary:   #{ $font-family-primary };
+	--font-family--secondary: #{ $font-family-secondary };
+	--font-family--headings:  #{ $font-family-headings };
+	--font-family--mono:      #{ $font-family-mono };
+
+	// Font sizes and line heights -----------------------------------------
+
+	--font-size--xs:   0.875rem;
+	--line-height--xs: 1.25rem;
+
+	--font-size--sm:   0.9375rem;
+	--line-height--sm: 1.5rem;
+
+	--font-size--base: 1rem;
+	--line-height--base: 1.5rem;
+
+	// 1.125rem / 1.96875rem (1.75)
+	--font-size--lg:   #{ fluid( 1.0625rem, 1.125rem, $breakpoint-sm, $breakpoint-base ) };
+	--line-height--lg: #{ fluid( 1.75rem, 1.96875rem, $breakpoint-sm, $breakpoint-base ) };
+
+	// 1.25rem / 2.1875rem (1.75)
+	--font-size--xl:   #{ fluid( 1.125rem, 1.25rem, $breakpoint-sm, $breakpoint-base ) };
+	--line-height--xl: 1.75;
+
+	// 1.5rem / 2rem
+	--font-size--2xl:  #{ fluid( 1.25rem, 1.5rem, $breakpoint-sm, $breakpoint-base ) };
+	--line-height--2xl:  #{ fluid( 2.1875rem, 2rem, $breakpoint-sm, $breakpoint-base ) };
+
+	// 1.875rem / 2.25rem
+	--font-size--3xl: #{ fluid( 1.5rem, 1.875rem, $breakpoint-sm, $breakpoint-base ) };
+	--line-height--3xl: #{ fluid( 2rem, 2.25rem, $breakpoint-sm, $breakpoint-base ) };
+
+	// 2.25rem / 2.53125rem
+	--font-size--4xl: #{ fluid( 1.75rem, 2.25rem, $breakpoint-sm, $breakpoint-base ) };
+	--line-height--4xl: #{ fluid( 2.125rem, 2.53125rem, $breakpoint-sm, $breakpoint-base ) };
+
+	// 3rem / 3.25rem
+	--font-size--5xl: #{ fluid( 2rem, 3rem, $breakpoint-sm, $breakpoint-lg ) };
+	--line-height--5xl: #{ fluid( 2.25rem, 3.25rem, $breakpoint-sm, $breakpoint-lg ) };
+
+	// 4rem / 4rem (1)
+	--font-size--6xl: #{ fluid( 2.25rem, 4rem, $breakpoint-sm, $breakpoint-xl ) };
+	--line-height--6xl: #{ fluid( 2.53125rem, 4rem, $breakpoint-sm, $breakpoint-xl ) };
+
+	// 4.5rem / 4.5rem
+	//--font-size--7xl: #{ fluid( 2.5rem, 4.5rem, $breakpoint-sm, $breakpoint-xl ) };
+	//--line-height--7xl: #{ fluid( 2.75rem, 4.5rem, $breakpoint-sm, $breakpoint-xl ) };
+
+	// 6rem / 6rem
+	//--font-size--8xl: #{ fluid( 2.75rem, 6rem, $breakpoint-sm, $breakpoint-2xl ) };
+	//--line-height--8xl: #{ fluid( 3rem, 6rem, $breakpoint-sm, $breakpoint-2xl ) };
+
+	// 8rem / 8rem
+	//--font-size--9xl: #{ fluid( 3rem, 8rem, $breakpoint-sm, $breakpoint-2xl ) };
+	//--line-height--9xl: #{ fluid( 3.25rem, 8rem, $breakpoint-sm, $breakpoint-2xl ) };
+}

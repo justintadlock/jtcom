@@ -1,0 +1,76 @@
+.entry {
+	&__byline {
+		font-size: var( --font-size--2xl );
+		line-height: var( --line-height--2xl );
+		font-family: var( --font-family--secondary );
+		color: $neutral-600;
+
+		+ .entry__title {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		color: #{$neutral-800};
+
+		a { color: inherit; }
+	}
+
+	// Add default background to headings. Clip it to the text.
+	&__title:where( h1 ) {
+		position: relative;
+		z-index: 1;
+		padding-bottom: 0.25em;
+		color: #{$neutral-800}e6; // e6 - 90% opacity
+		background-color: #b5b5b5;
+		background-clip: text !important;
+		-webkit-background-clip: text !important;
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			bottom: 0;
+			left: -1.5rem;
+			height: 1.25em;
+			width: 100%;
+			background-color: $primary-200;
+			background: linear-gradient( to right, $primary-200 75%, transparent );
+			-webkit-mask-image: url('../svg/brush-stroke-big.svg');
+			mask-image: url('../svg/brush-stroke-big.svg');
+			-webkit-mask-position: left bottom;
+			mask-position: left bottom;
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+			-webkit-mask-size: 100% 100%;
+			mask-size: 100% 100%;
+		}
+	}
+
+	&--format-aside .entry__content {
+		box-sizing:    content-box;
+		margin-top:    var( --spacing--global );
+		padding:       var( --spacing--global );
+		font-size:     var( --font-size--lg );
+		line-height:   var( --line-height--lg );
+		color:         $primary-800;
+		text-shadow:   0 1px $primary-200;
+		background:    $primary-50;
+		border-radius: 6px;
+		border-left:   6px solid $primary-600;
+
+		box-shadow: 0 4px 6px -1px $neutral-300,
+			    0 2px 4px -1px $neutral-200,
+			    inset 1px 1px 10px $neutral-100;
+
+		a { color: inherit; }
+
+		a:hover,
+		a:focus { background: $primary-100; }
+	}
+
+	&__summary {
+		margin-top: var( --spacing--4 );
+	}
+}

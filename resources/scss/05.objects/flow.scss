@@ -1,0 +1,12 @@
+.o-flow {
+	clear: both;
+
+	> * {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	> * + * {
+		margin-top: var( --o-flow--gap, var( --spacing--global ) );
+	}
+}
