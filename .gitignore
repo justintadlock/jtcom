@@ -1,0 +1,15 @@
+/node_modules
+/vendor
+/phpcs.xml
+/.phpcs.xml
+/user
+*.map
+.env*
+!.env.example
+_jt
+_todo
+.wmv
+.mp4
+.mp3
+.flv
+.mov
